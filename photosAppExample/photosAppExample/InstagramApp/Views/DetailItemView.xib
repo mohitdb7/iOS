@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="DetailItemView" id="vOe-FL-828" customClass="DetailItemView" customModule="photosAppExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="7Bm-A7-X7a">
+                    <rect key="frame" x="0.0" y="-10" width="393" height="328"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="328" id="0zN-t0-tft"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is Lorem Ipsum?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VuB-J9-sqU">
+                    <rect key="frame" x="20" y="326" width="353" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="63U-7k-xSg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHb-Lw-ume">
+                    <rect key="frame" x="20" y="355" width="353" height="304.33333333333326"/>
+                    <mutableString key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="7r0-ev-eQz"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7Bm-A7-X7a" firstAttribute="top" secondItem="vOe-FL-828" secondAttribute="top" constant="-10" id="73i-aT-CkO"/>
+                <constraint firstItem="eHb-Lw-ume" firstAttribute="leading" secondItem="vOe-FL-828" secondAttribute="leading" constant="20" symbolic="YES" id="Fre-7K-uua"/>
+                <constraint firstItem="eHb-Lw-ume" firstAttribute="top" secondItem="VuB-J9-sqU" secondAttribute="bottom" constant="8" symbolic="YES" id="IYw-Xt-QOE"/>
+                <constraint firstAttribute="trailing" secondItem="VuB-J9-sqU" secondAttribute="trailing" constant="20" symbolic="YES" id="Of4-mQ-hGL"/>
+                <constraint firstItem="VuB-J9-sqU" firstAttribute="top" secondItem="7Bm-A7-X7a" secondAttribute="bottom" constant="8" symbolic="YES" id="VF4-wH-gCL"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="eHb-Lw-ume" secondAttribute="bottom" constant="20" symbolic="YES" id="Z7i-5N-u9Z"/>
+                <constraint firstItem="VuB-J9-sqU" firstAttribute="leading" secondItem="vOe-FL-828" secondAttribute="leading" constant="20" symbolic="YES" id="eWh-PS-r1d"/>
+                <constraint firstItem="7Bm-A7-X7a" firstAttribute="leading" secondItem="vOe-FL-828" secondAttribute="leading" id="o72-uE-rqB"/>
+                <constraint firstItem="7Bm-A7-X7a" firstAttribute="centerX" secondItem="VuB-J9-sqU" secondAttribute="centerX" id="oFr-D3-zwZ"/>
+                <constraint firstAttribute="trailing" secondItem="eHb-Lw-ume" secondAttribute="trailing" constant="20" symbolic="YES" id="xTI-Qx-mPE"/>
+            </constraints>
+            <connections>
+                <outlet property="descriptionLabel" destination="eHb-Lw-ume" id="mSj-NL-phS"/>
+                <outlet property="detailImage" destination="7Bm-A7-X7a" id="TsN-8F-GnK"/>
+                <outlet property="headerLabel" destination="VuB-J9-sqU" id="4tY-Zx-HzX"/>
+            </connections>
+            <point key="canvasLocation" x="679" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1" width="320" height="206"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

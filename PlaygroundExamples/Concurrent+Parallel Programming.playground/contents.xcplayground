@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='1. Sync+Async'/>
+        <page name='2. ConcurrentQueue + DispatchBarrier'/>
+        <page name='3. Dispatch Group'/>
+        <page name='4. DispatchWorkItem'/>
+        <page name='5. Semaphore'/>
+        <page name='Concurrent vs Parallel'/>
+    </pages>
+</playground>

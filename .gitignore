@@ -1,0 +1,31 @@
+**/.DS_Store
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+Pods/
+Podfile.lock
+
+# Generated files
+*.o
+*.pyc
+
+# Assets
+*.MOV
+*.HEIC
+*.jpg
+*.jpeg
+*.png
+
+#Python modules
+MANIFEST
+dist/
+build/
+
+# Backup files
+*~.nib
